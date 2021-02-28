@@ -1,0 +1,15 @@
+# Setup git globals
+git config --global user.name "Steinar Hovland"
+git config --global user.email REPLACE-ME@REPLACE-ME.com
+
+# Setup npm globals
+npm config set init-author-name "Steinar Hovland" -g
+npm config set init-author-email "REPLACE-ME" -g
+npm config set init-author-url "https://www.steinarhovland.no" -g
+npm config set init-license "MIT" -g
+
+# Add VScode code to terminal
+cat << EOF >> ~/.zprofile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
